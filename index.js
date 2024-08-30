@@ -5,7 +5,7 @@ import anyanime from "anyanime";
 const app = express();
 
 const port = 6070;
-const hostname = "127.0.0.1";
+//const hostname = "127.0.0.1";
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -50,6 +50,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log("server is started on " + port);
 });
